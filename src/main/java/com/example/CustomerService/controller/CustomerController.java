@@ -3,7 +3,7 @@ package com.example.CustomerService.controller;
 import com.example.CustomerService.dto.CustomerRequestDto;
 import com.example.CustomerService.dto.CustomerResponseDto;
 import com.example.CustomerService.model.Customer;
-import com.example.CustomerService.service.impl.Customerservice;
+import com.example.CustomerService.service.Customerservice;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;

@@ -5,6 +5,7 @@ import com.example.CustomerService.dto.CustomerRequestDto;
 import com.example.CustomerService.dto.MobileVerificationResponseDto;
 import com.example.CustomerService.model.Customer;
 import com.example.CustomerService.repository.CustomerRepository;
+import com.example.CustomerService.service.Customerservice;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatusCode;
@@ -16,7 +17,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class CustomerServiceImpl implements Customerservice{
+public class CustomerServiceImpl implements Customerservice {
     private final CustomerRepository customerRepository;
     private final ModelMapper modelMapper;
     private final MobileVerificationClient mobileVerificationClient;

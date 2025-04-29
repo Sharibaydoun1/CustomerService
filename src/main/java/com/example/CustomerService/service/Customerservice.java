@@ -1,7 +1,6 @@
-package com.example.CustomerService.service.impl;
+package com.example.CustomerService.service;
 
 import com.example.CustomerService.dto.CustomerRequestDto;
-import com.example.CustomerService.dto.CustomerResponseDto;
 import com.example.CustomerService.model.Customer;
 
 import java.util.List;
