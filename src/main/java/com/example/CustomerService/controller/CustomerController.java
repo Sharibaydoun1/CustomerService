@@ -7,6 +7,7 @@ import com.example.CustomerService.service.Customerservice;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ import java.util.List;
 import java.util.UUID;
 @CrossOrigin(origins = "http://localhost:5173")
 @RestController
-@RequestMapping("/customer")
+@RequestMapping("user/customer")
 @RequiredArgsConstructor
 
 public class CustomerController {

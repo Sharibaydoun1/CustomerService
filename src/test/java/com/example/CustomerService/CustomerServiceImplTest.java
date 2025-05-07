@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.oauth2.jwt.JwtDecoder;
 
 import java.util.*;
 
@@ -25,6 +26,10 @@ class CustomerServiceImplTest {
 
     @MockBean
     private CustomerRepository customerRepository;
+
+    @MockBean
+    private JwtDecoder jwtDecoder;
+
 
     @MockBean
     private MobileVerificationClient mobileVerificationClient;
